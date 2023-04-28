@@ -121,7 +121,7 @@ header {
 
 /* AREA DO DROP DO PERFIL */
 .profile-dropdown-container {
-    display: block;
+    display: none;
     width: var(--dropdown-user-width);
     height: var(--dropdown-user-height);
     border-radius: var(--small-space);
