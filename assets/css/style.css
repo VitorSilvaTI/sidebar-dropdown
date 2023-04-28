@@ -14,7 +14,8 @@
     /* * Tamanhos dos elementos principais da pagina */
     --icon-side-bar: 2.2rem;
     --side-bar-retract: 5rem;
-    --dropdown-user: 16.66rem;
+    --dropdown-user-width: 16.66rem;
+    --dropdown-user-height: 16.2rem;
     --icon-logo-side-bar: 3rem;
     --icon-dropdown-user: 2.75rem;
     --side-bar-expanded: 26.66rem;
@@ -44,7 +45,7 @@
     --profile-border: #f04155;
 
     /* Hover */
-    --profile-hover: rgba(255, 255, 255, 0.2);
+    --profile-hover: rgba(255, 255, 255);
     --dropdown-hover: rgba(255, 255, 255, 0.2);
 }
 
@@ -103,9 +104,11 @@ header {
 }
 
 .container-dropdown-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: absolute;
     margin-right: var(--smaller-text);
-    width: var(--dropdown-user);
     height: 18.16rem;
     top: 0;
     right: 0;
@@ -113,16 +116,14 @@ header {
 
 /* CONTAINER DO ICONE DO PERFIL DO USUARIO */
 .container-user {
-    display: flex;
-    justify-content: flex-end;
     cursor: pointer;
 }
 
 /* AREA DO DROP DO PERFIL */
 .profile-dropdown-container {
-    display: none;
-    width: var(--dropdown-user);
-    height: var(--dropdown-user);
+    display: block;
+    width: var(--dropdown-user-width);
+    height: var(--dropdown-user-height);
     border-radius: var(--small-space);
     background-color: var(--profile-user-bg);
     border: 1px solid var(--profile-border);
@@ -130,14 +131,12 @@ header {
 
 .profile-dropdown {
     display: block;
-    height: 100%;
     width: 100%;
+    height: var(--dropdown-user-height);
     padding-top: var(--small-space);
-    border-bottom-left-radius: var(--smaller-space);
-    border-bottom-right-radius: var(--smaller-space);
 }
 
-.profile-dropdown ul {
+.profile-dropdown-list {
     display: block;
     font-size: var(--default-text);
     list-style: none;
@@ -146,20 +145,25 @@ header {
 }
 
 /* DETALHES DA LISTA */
-.profile-dropdown ul li {
+.profile-dropdown-list li {
     display: flex;
     align-items: center;
     height: 3.75rem;
     border-bottom: 1px solid var(--profile-border);
 }
 
-.profile-dropdown ul li a {
+.profile-dropdown-list li a {
     text-decoration: none;
     width: 100%;
 }
 
-.profile-dropdown ul li:hover:not(.info-user) {
+.profile-dropdown-list li:hover:not(.info-user) {
     background-color: var(--profile-hover);
+}
+/*! */
+.profile-dropdown-list li:nth-last-child(1) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .element-list {
