@@ -61,6 +61,7 @@ html {
 
 body {
     background-color: var(--background-body);
+    height: 200vh;
 }
 
 /* ALTERA O TAMANHO DAS FONTES DOS TITULOS DA SIDEBAR*/
@@ -398,9 +399,8 @@ main {
     cursor: pointer;
 }
 
-.arrow-up {
-    font-size: 2.08rem;
-    color: var(--arrow-float-button);
+.arrow-up img {
+    width: 32px;
 }
 
 /* CLASSES VIA JS */
