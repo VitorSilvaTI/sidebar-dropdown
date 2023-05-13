@@ -1,6 +1,6 @@
 # Sidebar dropdown
 
-##### Uma Sidebar com dropdown tradicional e para o lado. <br/> Neste exemplo cada dropdown contém os livros que seriam lidos.
+##### Uma Sidebar com dropdown tradicional e para o lado. <br/> Neste exemplo cada dropdown contém livros.
 ![sidebar](https://github.com/VitorSilvaTI/sidebar-dropdown/assets/73248933/08f90f34-4a23-4cd9-ac82-4887f8581a45)
 
 ## Dropdown aberto
