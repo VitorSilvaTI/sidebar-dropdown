@@ -8,5 +8,5 @@
 ![sidebar-open](https://github.com/VitorSilvaTI/sidebar-dropdown/assets/73248933/71ecfacb-ff85-4dd5-9128-3ba8c492c51a)
 
 ## Menu do usuário
-##### Nesta parte temos um menu do usuario com as opções: <br/> acessar os dados, as configurações e sair da conta.
+##### Nesta parte temos um menu do usuário com as opções: <br/> acessar os dados, as configurações e sair da conta.
 ![drop-user](https://github.com/VitorSilvaTI/sidebar-dropdown/assets/73248933/8768a8b5-9281-4552-97ae-db28200202e6)
