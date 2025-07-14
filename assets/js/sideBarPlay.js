@@ -55,7 +55,6 @@ addEventListener('load', () => {
     require.sidebar,
     require.headerMain,
     require.containerIcon,
-    require.containerLogo,
     require.dropdowns,
     require.arrows,
     require.sideDropdowns
