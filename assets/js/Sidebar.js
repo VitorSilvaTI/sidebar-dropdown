@@ -76,7 +76,6 @@ class Sidebar {
   closeSidebar(sidebar, headerMain) {
     sidebar.classList.remove('resize-side-retract');
     this.increaseMainAndHeader(headerMain);
-    // this.addIconMenu(iconMenu, IPMTlogo);
   }
 
   /* ABRE E FECHA OS DROPDOWNS DO MENU */

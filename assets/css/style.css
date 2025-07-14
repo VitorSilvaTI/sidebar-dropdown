@@ -259,12 +259,10 @@ ul li.log-out {
   font-size: var(--icon-side-bar);
   cursor: pointer;
   color: var(--side-bar-icon-color);
-  /* padding-left: var(--default-text); */
 }
 
 .menu-dropdown-ul li {
   border-bottom: 1px solid var(--white-color);
-  /* padding-left: var(--smaller-space); */
 }
 
 .menu-dropdown-ul li:hover:not(.logo-container, .sub-menu-drop li) {
@@ -275,7 +273,6 @@ ul li.log-out {
 .container-item-none {
   padding: 0 0.9rem;
   height: 4.08rem;
-  /*modifiquei aqui*/
   padding-left: 1.316rem;
   cursor: pointer;
 }
@@ -297,7 +294,6 @@ ul li.log-out {
 /* DIV QUE FUNCIONA COMO BOTÃO PARA O DROPDONW */
 .container-dropdown {
   width: 100%;
-  /* cursor: pointer; */
   font-size: var(--smaller-text);
   height: 100%;
 }
