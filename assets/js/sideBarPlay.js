@@ -7,7 +7,6 @@ const require = {
   icones: document.querySelectorAll('[icon-withoud-dropdown]'),
   dropdowns: document.querySelectorAll('.dropdown-container'),
   containerIcon: document.querySelector('.container-icon-menu'),
-  containerLogo: document.querySelector('.container-logo'),
   iconMenu: document.querySelector('.logo-container'),
   sideDropdowns: document.querySelectorAll('.sub-menu-drop'),
   btnDropdown: document.querySelectorAll('[dropdown-button]'),
@@ -18,21 +17,11 @@ const require = {
 };
 
 require.iconMenu.addEventListener('click', () => {
-  side.openSidebar(
-    require.sidebar,
-    require.headerMain,
-    require.containerIcon,
-    require.containerLogo
-  );
+  side.openSidebar(require.sidebar, require.headerMain);
 });
 
 require.sidebar.addEventListener('mouseleave', () => {
-  side.closeSidebar(
-    require.sidebar,
-    require.headerMain,
-    require.containerIcon,
-    require.containerLogo
-  );
+  side.closeSidebar(require.sidebar, require.headerMain);
 
   side.closeDropdown(require.dropdowns, require.arrows);
   side.closeSideDropdown(require.sideDropdowns);
@@ -45,9 +34,7 @@ addEventListener('load', () => {
     require.arrows,
     require.sideDropdowns,
     require.sidebar,
-    require.headerMain,
-    require.containerIcon,
-    require.containerLogo
+    require.headerMain
   );
 
   side.openSidebarByIconsWithoudDropdown(

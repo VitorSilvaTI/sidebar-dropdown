@@ -24,7 +24,6 @@
 
   /* Colors */
   --white-color: #ffffff;
-  --side-bar-logo-color: #fff7bd;
   --side-bar-icon-color: #fff7bd;
   --arrow-float-button: #ffffff;
   --icon-logo-header: #ff823a;
@@ -214,14 +213,6 @@ ul li.log-out {
 }
 
 /* SIDEBAR LARGE  */
-.container-logo {
-  text-align: center;
-}
-
-.container-logo > i {
-  color: var(--side-bar-logo-color);
-  font-size: var(--icon-logo-side-bar);
-}
 
 .sidebar-dropdown {
   position: fixed;
@@ -248,16 +239,12 @@ ul li.log-out {
 .logo-container {
   padding: var(--small-space) 0;
   padding-left: 1.316rem;
-}
-
-.container-logo {
-  display: none;
+  cursor: pointer;
 }
 
 /* ICONE PARA ABRIR A SIDEBAR*/
 .container-icon-menu > i {
   font-size: var(--icon-side-bar);
-  cursor: pointer;
   color: var(--side-bar-icon-color);
 }
 
@@ -265,7 +252,7 @@ ul li.log-out {
   border-bottom: 1px solid var(--white-color);
 }
 
-.menu-dropdown-ul li:hover:not(.logo-container, .sub-menu-drop li) {
+.menu-dropdown-ul li:hover:not(.sub-menu-drop li) {
   background-color: var(--dropdown-hover);
 }
 
